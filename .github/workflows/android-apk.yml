@@ -26,6 +26,8 @@ jobs:
 
       - name: Android SDK einrichten
         uses: android-actions/setup-android@v3
+        with:
+          accept-android-sdk-licenses: true
 
       - name: Android-Projekt entpacken
         run: unzip Nordland-SPK-Android-Projekt.zip -d android-project
